@@ -1,8 +1,7 @@
-import { useContext } from "react";
-import AppStateContext from "../contexts/AppStateContext";
+import usePrototypes from "../hooks/UsePrototypes";
 
 export default function Prototypes() {
-  const { prototypes } = useContext(AppStateContext);
+  const prototypes = usePrototypes();
   return (
     <main>
       <div className="prototypes">
